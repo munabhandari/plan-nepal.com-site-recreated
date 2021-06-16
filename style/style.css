@@ -1,1 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto&display=swap");/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto&display=swap");
+body {
+  font-family: "Open Sans Condensed", sans-serif, "Roboto", sans-serif;
+}
+
+header .top-header {
+  background-color: #088f33;
+}
+header .top-header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+header .top-header a:hover {
+  color: #ed7701;
+}/*# sourceMappingURL=style.css.map */
