@@ -136,21 +136,51 @@ header {
             @extend .bg-slider;
             background-image: url(../images/slidder-img2.jpg);
         }
+
         .bg-slider3 {
             @extend .bg-slider;
             background-image: url(../images/slidder-img3.jpg);
         }
+
         .bg-slider4 {
             @extend .bg-slider;
             background-image: url(../images/slidder-img4.jpg);
         }
+
         .bg-slider5 {
             @extend .bg-slider;
             background-image: url(../images/slidder-img5.jpg);
         }
+
         .bg-slider6 {
             @extend .bg-slider;
             background-image: url(../images/slidder-img6.jpg);
+        }
+    }
+
+    position: relative;
+
+    .toolbar {
+        position: absolute;
+        width: 100%;
+        bottom: 30px;
+
+        form{
+            background: $light-grey;
+            .col-md-2{
+                padding: 20px 10px;
+                text-align: center;
+                select, button{
+                    width: 100%;
+                    padding: 5px;
+                    background: white;
+                }
+                button{
+                    background: $dark-orange;
+                    color: white;
+                    border: 0;
+                }
+            }
         }
     }
 }

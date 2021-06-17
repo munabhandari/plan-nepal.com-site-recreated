@@ -65,6 +65,9 @@ header .bottom-header .dropdown-menu a {
   color: #333333 !important;
 }
 
+.banner {
+  position: relative;
+}
 .banner .carousel-inner > div {
   min-height: 540px;
 }
@@ -104,4 +107,26 @@ header .bottom-header .dropdown-menu a {
 }
 .banner .carousel-inner .bg-slider6 {
   background-image: url(../images/slidder-img6.jpg);
+}
+.banner .toolbar {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+}
+.banner .toolbar form {
+  background: #f1f1f1;
+}
+.banner .toolbar form .col-md-2 {
+  padding: 20px 10px;
+  text-align: center;
+}
+.banner .toolbar form .col-md-2 select, .banner .toolbar form .col-md-2 button {
+  width: 100%;
+  padding: 5px;
+  background: white;
+}
+.banner .toolbar form .col-md-2 button {
+  background: #ed7702;
+  color: white;
+  border: 0;
 }/*# sourceMappingURL=style.css.map */
