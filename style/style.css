@@ -63,4 +63,45 @@ header .bottom-header .dropdown-menu {
 header .bottom-header .dropdown-menu a {
   padding: 15px 15px;
   color: #333333 !important;
+}
+
+.banner .carousel-inner > div {
+  min-height: 540px;
+}
+.banner .carousel-inner .outer-content {
+  display: flex;
+  height: 540px;
+  align-items: center;
+}
+.banner .carousel-inner .content {
+  width: 100%;
+  padding: 40px 200px;
+}
+.banner .carousel-inner .content button {
+  background: #ffa500;
+  color: white;
+  border: 0;
+  padding: 10px 20px;
+}
+.banner .carousel-inner .bg-slider, .banner .carousel-inner .bg-slider6, .banner .carousel-inner .bg-slider5, .banner .carousel-inner .bg-slider4, .banner .carousel-inner .bg-slider3, .banner .carousel-inner .bg-slider2, .banner .carousel-inner .bg-slider1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .carousel-inner .bg-slider1 {
+  background-image: url(../images/slidder-img1.jpg);
+}
+.banner .carousel-inner .bg-slider2 {
+  background-image: url(../images/slidder-img2.jpg);
+}
+.banner .carousel-inner .bg-slider3 {
+  background-image: url(../images/slidder-img3.jpg);
+}
+.banner .carousel-inner .bg-slider4 {
+  background-image: url(../images/slidder-img4.jpg);
+}
+.banner .carousel-inner .bg-slider5 {
+  background-image: url(../images/slidder-img5.jpg);
+}
+.banner .carousel-inner .bg-slider6 {
+  background-image: url(../images/slidder-img6.jpg);
 }/*# sourceMappingURL=style.css.map */

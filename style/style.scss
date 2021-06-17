@@ -7,10 +7,9 @@ body {
 
 @import "colors";
 
-.container {
-    // width: 1170px;
 
-}
+
+// header start
 
 header {
     .top-header {
@@ -37,11 +36,12 @@ header {
                     height: 20px;
                     display: inline-block;
                     align-self: center;
-                    &::before{
+
+                    &::before {
                         line-height: 20px;
-                            position: absolute;
-                            top: 0px;
-                            left: 3px;
+                        position: absolute;
+                        top: 0px;
+                        left: 3px;
                     }
                 }
             }
@@ -90,7 +90,67 @@ header {
             }
         }
     }
+}
+
+// header end
 
 
+// banner slider section start
+.banner {
+    .carousel-inner {
+        &>div {
+            min-height: 540px;
+        }
 
+        .outer-content {
+            display: flex;
+            height: 540px;
+            // justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            // align-self: center;
+            width: 100%;
+            padding: 40px 200px;
+
+            button {
+                background: $orange;
+                color: white;
+                border: 0;
+                padding: 10px 20px;
+            }
+        }
+
+        .bg-slider {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-slider1 {
+            @extend .bg-slider;
+            background-image: url(../images/slidder-img1.jpg);
+        }
+
+        .bg-slider2 {
+            @extend .bg-slider;
+            background-image: url(../images/slidder-img2.jpg);
+        }
+        .bg-slider3 {
+            @extend .bg-slider;
+            background-image: url(../images/slidder-img3.jpg);
+        }
+        .bg-slider4 {
+            @extend .bg-slider;
+            background-image: url(../images/slidder-img4.jpg);
+        }
+        .bg-slider5 {
+            @extend .bg-slider;
+            background-image: url(../images/slidder-img5.jpg);
+        }
+        .bg-slider6 {
+            @extend .bg-slider;
+            background-image: url(../images/slidder-img6.jpg);
+        }
+    }
 }
