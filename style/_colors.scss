@@ -5,7 +5,16 @@ $light-grey: #f1f1f1;
 $bg-footer: #333333;
 $white: #ffffff;
 $dark-green: #0b732b;
+$dark: #333;
 
 .bg-dark-green{
     background-color: $dark-green;
+}
+
+.text-dark-green{
+    color: $dark-green;
+}
+
+.bg-light-grey{
+    background-color: $light-grey;
 }

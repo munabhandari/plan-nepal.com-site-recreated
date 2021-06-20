@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto&display=swap");
 body {
   font-family: "Roboto", sans-serif;
@@ -6,6 +7,14 @@ body {
 
 .bg-dark-green {
   background-color: #0b732b;
+}
+
+.text-dark-green {
+  color: #0b732b;
+}
+
+.bg-light-grey {
+  background-color: #f1f1f1;
 }
 
 header .top-header {
@@ -116,17 +125,78 @@ header .bottom-header .dropdown-menu a {
 .banner .toolbar form {
   background: #f1f1f1;
 }
+.banner .toolbar form .title {
+  background: #0b732b;
+  color: white;
+  text-transform: uppercase;
+  line-height: 32.6px;
+}
 .banner .toolbar form .col-md-2 {
   padding: 20px 10px;
   text-align: center;
 }
-.banner .toolbar form .col-md-2 select, .banner .toolbar form .col-md-2 button {
+.banner .toolbar form .col-md-2 select,
+.banner .toolbar form .col-md-2 button {
   width: 100%;
   padding: 5px;
   background: white;
+  border: 1px solid black;
 }
 .banner .toolbar form .col-md-2 button {
   background: #ed7702;
   color: white;
-  border: 0;
+}
+
+.p-featured ul li {
+  list-style: none;
+  position: relative;
+  padding: 3px 30px;
+}
+.p-featured ul li:before {
+  position: absolute;
+  left: 0px;
+  content: "";
+  font-family: "FontAwesome";
+}
+.p-featured ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.view-more {
+  background: #ed7702;
+  color: #ffffff;
+  padding: 10px 25px;
+  float: right;
+  text-decoration: none;
+}
+.view-more:hover {
+  background: #0b732b;
+  color: #ffffff;
+}
+
+.our-specialist .col-md-4 {
+  position: relative;
+  overflow: hidden;
+}
+.our-specialist .col-md-4 img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.our-specialist .col-md-4 img:hover {
+  transform: scale(2);
+  transition: 2s;
+}
+.our-specialist .col-md-4 .overlay {
+  background: #ed7702;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  position: absolute;
+  display: inline-block;
+  left: 12px;
+  bottom: 25px;
+}
+.our-specialist .col-md-4 .overlay:hover {
+  background: #0b732b;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

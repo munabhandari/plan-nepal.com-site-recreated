@@ -105,12 +105,10 @@ header {
         .outer-content {
             display: flex;
             height: 540px;
-            // justify-content: center;
             align-items: center;
         }
 
         .content {
-            // align-self: center;
             width: 100%;
             padding: 40px 200px;
 
@@ -165,21 +163,104 @@ header {
         width: 100%;
         bottom: 30px;
 
-        form{
+        form {
+            .title {
+                background: $dark-green;
+                color: white;
+                text-transform: uppercase;
+                line-height: 32.6px;
+            }
+
             background: $light-grey;
-            .col-md-2{
+
+            .col-md-2 {
                 padding: 20px 10px;
                 text-align: center;
-                select, button{
+
+                select,
+                button {
                     width: 100%;
                     padding: 5px;
                     background: white;
+                    border: 1px solid black;
                 }
-                button{
+
+                button {
                     background: $dark-orange;
                     color: white;
-                    border: 0;
                 }
+            }
+        }
+    }
+}
+
+// banner slider section end
+
+
+//section Features package start
+.p-featured {
+    ul {
+        li {
+            list-style: none;
+            position: relative;
+            padding: 3px 30px;
+
+            &:before {
+                position: absolute;
+                left: 0px;
+                content: '\f178';
+                font-family: 'FontAwesome';
+            }
+
+            a {
+                text-decoration: none;
+                color: $dark;
+            }
+        }
+    }
+
+}
+
+.view-more {
+    background: $dark-orange;
+    color: $white;
+    padding: 10px 25px;
+    float: right;
+    text-decoration: none;
+
+    &:hover {
+        background: $dark-green;
+        color: $white;
+    }
+}
+
+.our-specialist {
+    .col-md-4 {
+        position: relative;
+            overflow: hidden;
+        img {
+
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+
+            &:hover {
+                transform: scale(2);
+                transition: 2s;
+            }
+        }
+
+        .overlay {
+            background: $dark-orange;
+            color: $white;
+            text-transform: uppercase;
+            padding: 10px 40px;
+            position: absolute;
+            display: inline-block;
+            left: 12px;
+            bottom: 25px;
+
+            &:hover {
+                background: $dark-green;
+                cursor: pointer;
             }
         }
     }
