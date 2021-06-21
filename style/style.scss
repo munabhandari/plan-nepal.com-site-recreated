@@ -12,6 +12,26 @@ body {
 // header start
 
 header {
+    &.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+
+        animation: smoothScroll 1s forwards;
+    }
+
+    @keyframes smoothScroll {
+        0% {
+            transform: translateY(-40px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
     .top-header {
         background-color: $light-green;
 
@@ -290,17 +310,20 @@ header {
 
 .nepal-family-tour {
     position: relative;
-     &:hover{
-        img{
+
+    &:hover {
+        img {
             opacity: 0.7;
         }
     }
+
     .btn-overlay {
         position: absolute;
         bottom: 0px;
         left: 24px;
         color: $white;
         width: calc(100% - 24px);
+
         .family-tour {
             background-color: rgba($dark-green, 0.7);
             padding: 10px 20px;
@@ -316,40 +339,45 @@ header {
     }
 }
 
-footer{
-    .footer-top{
-       background-color: $bg-footer;
-       color: $white;    
-       h4{
-           text-transform: uppercase;
-       }
-       li{
-           line-height: 30px;
-       }
-       & a{
-           color: $white;
-           text-decoration: none;                      
-       }
-      & a:hover{
-        color: $dark-orange;            
-        transform: scaleX(1.5);
-    } 
-        
-        & li{
+footer {
+    .footer-top {
+        background-color: $bg-footer;
+        color: $white;
+
+        h4 {
+            text-transform: uppercase;
+        }
+
+        li {
+            line-height: 30px;
+        }
+
+        & a {
+            color: $white;
+            text-decoration: none;
+        }
+
+        & a:hover {
+            color: $dark-orange;
+            transform: scaleX(1.5);
+        }
+
+        & li {
             list-style: none;
         }
-    button{
-         background-color: $dark-orange;
-         color: $white;
-         text-transform: uppercase;
-         border: none;
-         padding: 10px;
-    }
-}    
 
-.footer-bottom{
-    background-color: $dark-green;
-    padding: 15px 0px;
-}
-     
+        button {
+            background-color: $dark-orange;
+            color: $white;
+            text-transform: uppercase;
+            border: none;
+            padding: 10px;
+        }
+    }
+
+    .footer-bottom {
+        background-color: $dark-green;
+        padding: 15px 0px;
+    }
+
 }
