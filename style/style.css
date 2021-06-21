@@ -237,4 +237,33 @@ header .bottom-header .dropdown-menu a {
   background-color: rgba(237, 119, 2, 0.7);
   padding: 10px 20px;
   width: 30%;
+}
+
+footer .footer-top {
+  background-color: #333333;
+  color: #ffffff;
+}
+footer .footer-top h4 {
+  text-transform: uppercase;
+}
+footer .footer-top li {
+  line-height: 30px;
+}
+footer .footer-top a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .footer-top a:hover {
+  color: #ed7702;
+  transform: scaleX(1.5);
+}
+footer .footer-top li {
+  list-style: none;
+}
+footer .footer-top button {
+  background-color: #ed7702;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */

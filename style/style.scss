@@ -315,3 +315,37 @@ header {
         }
     }
 }
+
+footer{
+    .footer-top{
+       background-color: $bg-footer;
+       color: $white;    
+       h4{
+           text-transform: uppercase;
+       }
+       li{
+           line-height: 30px;
+       }
+       & a{
+           color: $white;
+           text-decoration: none;                      
+       }
+      & a:hover{
+        color: $dark-orange;            
+        transform: scaleX(1.5);
+    } 
+        
+        & li{
+            list-style: none;
+        }
+    button{
+         background-color: $dark-orange;
+         color: $white;
+         text-transform: uppercase;
+         border: none;
+         padding: 10px;
+    }
+      
+
+    }  
+}
