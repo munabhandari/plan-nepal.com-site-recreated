@@ -180,11 +180,11 @@ header .bottom-header .dropdown-menu a {
   overflow: hidden;
 }
 .our-specialist .col-md-4 img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
 }
 .our-specialist .col-md-4 img:hover {
-  transform: scale(2);
-  transition: 2s;
+  transform: scale(1.2);
+  transition: transform 2s;
 }
 .our-specialist .col-md-4 .overlay {
   background: #ed7702;
@@ -199,4 +199,42 @@ header .bottom-header .dropdown-menu a {
 .our-specialist .col-md-4 .overlay:hover {
   background: #0b732b;
   cursor: pointer;
+}
+
+.Best-selling-trips .tabs .nav-tabs {
+  background-color: #0b732b;
+}
+.Best-selling-trips .tabs .nav-tabs .active {
+  background-color: #ed7702;
+  color: #ffffff;
+}
+.Best-selling-trips .tabs .nav-tabs .nav-link {
+  color: #ffffff;
+}
+.Best-selling-trips .tabs .nav-tabs .nav-link:hover {
+  background-color: #ed7702;
+}
+
+.nepal-family-tour {
+  position: relative;
+}
+.nepal-family-tour:hover img {
+  opacity: 0.7;
+}
+.nepal-family-tour .btn-overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 24px;
+  color: #ffffff;
+  width: calc(100% - 24px);
+}
+.nepal-family-tour .btn-overlay .family-tour {
+  background-color: rgba(11, 115, 43, 0.7);
+  padding: 10px 20px;
+  width: 70%;
+}
+.nepal-family-tour .btn-overlay .days {
+  background-color: rgba(237, 119, 2, 0.7);
+  padding: 10px 20px;
+  width: 30%;
 }/*# sourceMappingURL=style.css.map */

@@ -237,14 +237,15 @@ header {
 .our-specialist {
     .col-md-4 {
         position: relative;
-            overflow: hidden;
+        overflow: hidden;
+
         img {
 
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 0 3px 5px 0 rgba(0, 0, 0, .19);
 
             &:hover {
-                transform: scale(2);
-                transition: 2s;
+                transform: scale(1.2);
+                transition: transform 2s;
             }
         }
 
@@ -262,6 +263,55 @@ header {
                 background: $dark-green;
                 cursor: pointer;
             }
+        }
+    }
+}
+
+.Best-selling-trips {
+    .tabs {
+        .nav-tabs {
+            .active {
+                background-color: $dark-orange;
+                color: $white;
+            }
+
+            background-color: $dark-green;
+
+            .nav-link {
+                color: $white;
+
+                &:hover {
+                    background-color: $dark-orange;
+                }
+            }
+        }
+    }
+}
+
+.nepal-family-tour {
+    position: relative;
+     &:hover{
+        img{
+            opacity: 0.7;
+        }
+    }
+    .btn-overlay {
+        position: absolute;
+        bottom: 0px;
+        left: 24px;
+        color: $white;
+        width: calc(100% - 24px);
+        .family-tour {
+            background-color: rgba($dark-green, 0.7);
+            padding: 10px 20px;
+            width: 70%;
+        }
+
+        .days {
+            background-color: rgba($dark-orange, 0.7);
+            padding: 10px 20px;
+            width: 30%;
+
         }
     }
 }
