@@ -280,7 +280,9 @@ footer .footer-top a {
 }
 footer .footer-top a:hover {
   color: #ed7702;
-  transform: scaleX(1.5);
+  transition: 0.23s;
+  transform: translate(10px, 0);
+  display: inline-block;
 }
 footer .footer-top li {
   list-style: none;
@@ -295,4 +297,26 @@ footer .footer-top button {
 footer .footer-bottom {
   background-color: #0b732b;
   padding: 15px 0px;
+}
+
+@media only screen and (max-width: 780px) {
+  header .bottom-header .nav-link {
+    padding: 10px 5px !important;
+  }
+  header .bottom-header .logo-container img {
+    width: 80px;
+  }
+
+  section.banner .carousel-inner .outer-content {
+    display: block;
+  }
+  section.banner .carousel-inner .outer-content .content {
+    padding: 20px;
+  }
+  section.banner .toolbar {
+    padding: 0 60px;
+  }
+  section.banner .toolbar .col-md-2 {
+    padding: 3px 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
