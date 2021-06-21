@@ -266,4 +266,8 @@ footer .footer-top button {
   text-transform: uppercase;
   border: none;
   padding: 10px;
+}
+footer .footer-bottom {
+  background-color: #0b732b;
+  padding: 15px 0px;
 }/*# sourceMappingURL=style.css.map */
